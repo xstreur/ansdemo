@@ -1,2 +1,2 @@
 # ansdemo
-ANsible Demo Repository
+Ansible Demo Repository to work with Semaphore
