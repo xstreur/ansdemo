@@ -1,0 +1,8 @@
+---
+- hosts: centos8
+  remote_user: ansuser
+  tasks:
+  - name: CentOS 8 YumUpdate
+    dnf:
+      name: '*'
+      state: latest
