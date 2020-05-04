@@ -1,0 +1,10 @@
+---
+- hosts: centos8
+  remote_user: ansuser
+  become: true
+  become_method: sudo
+  tasks:
+  - name: CentOS 8 YumUpdate
+    dnf:
+      name: '*'
+      state: latest
