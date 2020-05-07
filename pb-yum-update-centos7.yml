@@ -1,0 +1,10 @@
+---
+- hosts: centos7
+  remote_user: ansuser
+  become: true
+  become_method: sudo
+  tasks:
+  - name: CentOS 7 YumUpdate
+    yum:
+      name: '*'
+      state: latest
